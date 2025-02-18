@@ -7,8 +7,32 @@
       "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\models\\customeraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\models\\customeraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,6 +59,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NLog.config",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\NLog.config",
+              "RelativeDocumentMoniker": "CustomerWebApi\\NLog.config",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\NLog.config",
+              "RelativeToolTip": "CustomerWebApi\\NLog.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-18T22:51:53.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NLog.config",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\NLog.config",
+              "RelativeDocumentMoniker": "CustomerWebApi\\NLog.config",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\NLog.config",
+              "RelativeToolTip": "CustomerWebApi\\NLog.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-18T22:51:41.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Program.cs",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Program.cs",
+              "RelativeToolTip": "CustomerWebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:35:26.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CustomerWebApi\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:26:56.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerAddress.cs",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Models\\CustomerAddress.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Models\\CustomerAddress.cs",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Models\\CustomerAddress.cs",
+              "RelativeToolTip": "CustomerWebApi\\Models\\CustomerAddress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:22:28.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Models\\Customer.cs",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Models\\Customer.cs",
+              "RelativeToolTip": "CustomerWebApi\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:18:58.737Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -51,20 +153,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\appsettings.json",
               "RelativeDocumentMoniker": "CustomerWebApi\\appsettings.json",
               "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\appsettings.json",
               "RelativeToolTip": "CustomerWebApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-18T21:11:02.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "CustomerWebApi\\Controllers\\WeatherForecastController.cs",
@@ -77,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "CustomerWebApi\\Properties\\launchSettings.json",
