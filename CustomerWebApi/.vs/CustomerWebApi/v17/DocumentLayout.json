@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DataNoesis\\customer\\CustomerWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|d:\\datanoesis\\customer\\customerwebapi\\customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F2E62E6-F016-4D24-9FD1-3B263090DDB2}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\WeatherForecast.cs",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\WeatherForecast.cs",
+              "RelativeToolTip": "CustomerWebApi\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T21:11:07.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "CustomerWebApi\\appsettings.json",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\appsettings.json",
+              "RelativeToolTip": "CustomerWebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T21:11:02.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "CustomerWebApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T21:10:40.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\DataNoesis\\customer\\CustomerWebApi\\CustomerWebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CustomerWebApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T21:10:04.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
