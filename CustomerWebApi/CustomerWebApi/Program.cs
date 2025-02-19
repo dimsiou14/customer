@@ -1,4 +1,5 @@
 using CustomerWebApi.Data;
+using CustomerWebApi.Repositories;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
@@ -18,8 +19,13 @@ try
 
     // Add services to the container.
     builder.Services.AddControllers();
+    builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 
+    // Add NLog Logger
+    builder.Logging.ClearProviders();
+    builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+    builder.Host.UseNLog();
 
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
