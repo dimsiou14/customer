@@ -1,6 +1,6 @@
 export const sortFunctionName = (rowA, rowB) => {
-    const a = rowA.Name.toLowerCase();
-    const b = rowB.Name.toLowerCase();
+    const a = rowA.name.toLowerCase();
+    const b = rowB.name.toLowerCase();
 
     if (a > b) {
         return 1;
@@ -14,8 +14,8 @@ export const sortFunctionName = (rowA, rowB) => {
 };
 
 export const sortFunctionEmail = (rowA, rowB) => {
-    const a = rowA.Email.toLowerCase();
-    const b = rowB.Email.toLowerCase();
+    const a = rowA.email.toLowerCase();
+    const b = rowB.email.toLowerCase();
 
     if (a > b) {
         return 1;
@@ -29,8 +29,8 @@ export const sortFunctionEmail = (rowA, rowB) => {
 };
 
 export const sortFunctionPhone = (rowA, rowB) => {
-    const a = rowA.Phone.toLowerCase();
-    const b = rowB.Phone.toLowerCase();
+    const a = rowA.phone.toLowerCase();
+    const b = rowB.phone.toLowerCase();
 
     if (a > b) {
         return 1;

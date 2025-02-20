@@ -19,7 +19,7 @@ try
 
     // Add services to the container.
     builder.Services.AddControllers();
-    builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+    builder.Services.AddScoped(typeof(ICustomerRepository), typeof(CustomerRepository));
 
 
     // Add NLog Logger

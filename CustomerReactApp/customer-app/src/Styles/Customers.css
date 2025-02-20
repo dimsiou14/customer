@@ -4,6 +4,41 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 
+}
+
+#tableWrapper {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#searchbarInput {
+    margin-top: 50px;
+    width: 300px;
+}
+
+#searchWrapper {
+    margin-right: 10px;
+}
+
+#btnWrapper {
+    margin-right: 10px;
+}
+
+#addBtn {
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+}
+
+#btnAddressWrapper {
+    margin-right: 10px;
+}
+
+#addAddressBtn {
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
 }

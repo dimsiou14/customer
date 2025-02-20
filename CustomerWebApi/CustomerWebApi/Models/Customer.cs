@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public ICollection<CustomerAddress> CustomerAddresses { get; set; }
+        public IList<CustomerAddress> CustomerAddresses { get; set; }
 
     }
 }

@@ -144,3 +144,543 @@ FROM [Customers] AS [c]
 2025-02-19 02:08:19.6690|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 13.5958ms 
 2025-02-19 02:08:19.6972|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - - - 
 2025-02-19 02:08:19.7005|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 3.5318ms 
+2025-02-19 23:23:04.5022|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8081 
+2025-02-19 23:23:04.5162|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001 
+2025-02-19 23:23:04.5162|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-19 23:23:04.5162|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-19 23:23:04.5162|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi 
+2025-02-19 23:23:05.1809|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - - - 
+2025-02-19 23:23:05.3665|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 - text/html;charset=utf-8 191.5136ms 
+2025-02-19 23:23:05.3782|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-19 23:23:05.3782|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/_vs/browserLink - - - 
+2025-02-19 23:23:05.3782|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript;+charset=utf-8 4.8354ms 
+2025-02-19 23:23:05.4766|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 98.4261ms 
+2025-02-19 23:23:05.5209|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - - - 
+2025-02-19 23:23:05.5766|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 56.0548ms 
+2025-02-19 23:27:27.6276|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:27:27.6324|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:27:27.6537|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:27:38.7949|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:27:40.3577|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:27:40.3740|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 12717.5896ms 
+2025-02-19 23:27:40.3740|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:27:40.3834|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:27:40.3834|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:27:40.3834|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:27:40.3834|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 12757.0618ms 
+2025-02-19 23:27:43.2091|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:27:43.2091|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:27:43.2091|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 2825.4023ms 
+2025-02-19 23:27:43.2091|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:27:43.2091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 2827.6002ms 
+2025-02-19 23:28:13.5991|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:28:13.5991|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:28:13.5991|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:28:17.9206|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:28:17.9206|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:28:17.9206|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 4323.5053ms 
+2025-02-19 23:28:17.9206|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:28:17.9206|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 4324.6599ms 
+2025-02-19 23:28:17.9341|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:28:17.9341|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:28:17.9341|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:28:18.6372|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:28:18.6372|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:28:18.6372|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 705.4408ms 
+2025-02-19 23:28:18.6372|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:28:18.6372|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 706.3667ms 
+2025-02-19 23:34:36.9336|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/main.d01a9be8af7c34097977.hot-update.json - - - 
+2025-02-19 23:34:36.9336|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/main.d01a9be8af7c34097977.hot-update.json - 404 0 - 1.0270ms 
+2025-02-19 23:34:36.9336|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8081/main.d01a9be8af7c34097977.hot-update.json, Response status code: 404 
+2025-02-19 23:34:37.3270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:34:37.3270|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:37.3270|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:34:42.3206|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 4993.5227ms 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 4994.8928ms 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:42.3206|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:34:44.5114|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:34:44.5114|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:34:44.5114|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 2183.2348ms 
+2025-02-19 23:34:44.5114|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:44.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 2183.9463ms 
+2025-02-19 23:34:44.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:34:44.5114|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:44.5188|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:34:44.5188|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:34:44.5188|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:34:44.5188|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 1.9993ms 
+2025-02-19 23:34:44.5188|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:44.5188|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 2.6896ms 
+2025-02-19 23:34:44.8461|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:34:44.8469|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:44.8469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:34:44.8469|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:34:44.8469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:34:44.8469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 3.4583ms 
+2025-02-19 23:34:44.8469|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:34:44.8469|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 5.4413ms 
+2025-02-19 23:34:59.5735|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8081 
+2025-02-19 23:34:59.5860|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001 
+2025-02-19 23:34:59.5860|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-19 23:34:59.5860|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-19 23:34:59.5860|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi 
+2025-02-19 23:35:00.0368|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - - - 
+2025-02-19 23:35:00.1599|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 - text/html;charset=utf-8 127.7045ms 
+2025-02-19 23:35:00.1599|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/_vs/browserLink - - - 
+2025-02-19 23:35:00.1599|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-19 23:35:00.1761|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript;+charset=utf-8 3.1558ms 
+2025-02-19 23:35:00.1945|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 22.7160ms 
+2025-02-19 23:35:00.2436|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - - - 
+2025-02-19 23:35:00.2938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 50.3996ms 
+2025-02-19 23:35:17.8223|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:35:17.8223|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:35:17.8379|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:35:18.4440|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:35:18.4603|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:35:18.4736|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 632.9277ms 
+2025-02-19 23:35:18.4736|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:35:18.4736|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 657.5256ms 
+2025-02-19 23:35:18.4736|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:35:18.4736|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:35:18.4736|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:35:18.5180|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:35:18.5185|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:35:18.5185|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 36.6927ms 
+2025-02-19 23:35:18.5185|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:35:18.5185|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 38.7581ms 
+2025-02-19 23:50:52.3529|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:50:52.3529|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:52.3529|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:50:52.3726|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:50:52.3726|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:50:52.3726|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 19.2212ms 
+2025-02-19 23:50:52.3726|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:52.3726|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 22.0416ms 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:50:52.3806|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 2.9752ms 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:52.3806|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 4.0018ms 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:50:56.2382|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 2.8047ms 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 3.9118ms 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:50:56.2382|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 2.211ms 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:50:56.2382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 3.1204ms 
+2025-02-19 23:51:16.3381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 81 
+2025-02-19 23:51:16.3381|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:51:16.3381|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:51:16.3679|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-02-19 23:51:16.3800|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 34.9694ms 
+2025-02-19 23:51:16.3800|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:51:16.3800|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 400 - application/problem+json;+charset=utf-8 42.2607ms 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 81 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 1.4793ms 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:51:37.9323|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 400 - application/problem+json;+charset=utf-8 2.2875ms 
+2025-02-19 23:52:23.8135|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:52:23.8135|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:52:23.8135|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:52:23.8179|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:52:23.8179|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:52:23.8179|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 9.2293ms 
+2025-02-19 23:52:23.8179|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:52:23.8179|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 10.3042ms 
+2025-02-19 23:52:23.8179|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:52:23.8310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:52:23.8310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:52:23.8310|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:52:23.8310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:52:23.8310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 2.1703ms 
+2025-02-19 23:52:23.8310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:52:23.8310|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 2.8958ms 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 81 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 1.5591ms 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:52:48.3074|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 400 - application/problem+json;+charset=utf-8 2.7032ms 
+2025-02-19 23:56:10.5902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:56:10.5902|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:56:10.5902|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:56:10.5902|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:56:10.5902|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 5.5166ms 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 7.0259ms 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:56:10.5969|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 1.8146ms 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:56:10.5969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 2.8916ms 
+2025-02-19 23:56:20.7344|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 81 
+2025-02-19 23:56:20.7344|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:56:20.7344|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:56:20.7376|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-02-19 23:56:20.7376|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 1.3697ms 
+2025-02-19 23:56:20.7376|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:56:20.7376|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 400 - application/problem+json;+charset=utf-8 3.7325ms 
+2025-02-19 23:57:33.5475|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8081 
+2025-02-19 23:57:33.5606|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001 
+2025-02-19 23:57:33.5606|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-19 23:57:33.5606|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-19 23:57:33.5606|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi 
+2025-02-19 23:57:33.8938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - - - 
+2025-02-19 23:57:34.0193|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 - text/html;charset=utf-8 129.7830ms 
+2025-02-19 23:57:34.0398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-19 23:57:34.0398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/_vs/browserLink - - - 
+2025-02-19 23:57:34.0398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript;+charset=utf-8 3.0552ms 
+2025-02-19 23:57:34.0611|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 21.5505ms 
+2025-02-19 23:57:34.1092|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - - - 
+2025-02-19 23:57:34.1605|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 51.4298ms 
+2025-02-19 23:57:48.2558|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 97 
+2025-02-19 23:57:48.2558|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:57:48.2851|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:58:20.5171|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 97 
+2025-02-19 23:58:20.5171|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:8081/api/customers - - - 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:8081/api/customers - application/json 97 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerWebApi.Models.Customer]] PostCustomer(CustomerWebApi.Models.Customer) on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:58:20.5195|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CustomerWebApi.Models.Customer]]] GetCustomers() on controller CustomerWebApi.Controllers.CustomersController (CustomerWebApi). 
+2025-02-19 23:58:22.3264|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:58:22.3264|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Email], [c].[Name], [c].[Phone]
+FROM [Customers] AS [c] 
+2025-02-19 23:58:22.3328|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (32ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([CustomerId], [Email], [Name], [Phone])
+VALUES (@p0, @p1, @p2, @p3); 
+2025-02-19 23:58:22.3328|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (32ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([CustomerId], [Email], [Name], [Phone])
+VALUES (@p0, @p1, @p2, @p3); 
+2025-02-19 23:58:22.3328|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (32ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([CustomerId], [Email], [Name], [Phone])
+VALUES (@p0, @p1, @p2, @p3); 
+2025-02-19 23:58:22.3518|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:58:22.3518|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerWebApi.Models.Customer, CustomerWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-19 23:58:22.3683|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 1834.0382ms 
+2025-02-19 23:58:22.3683|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi) in 1833.785ms 
+2025-02-19 23:58:22.3683|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:58:22.3683|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.GetCustomers (CustomerWebApi)' 
+2025-02-19 23:58:22.3683|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'CustomerWebApi.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0935fe33-fd4b-40c6-a8c6-9cff5a3767aa
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0935fe33-fd4b-40c6-a8c6-9cff5a3767aa
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-19 23:58:22.3683|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'CustomerWebApi.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:59aaa345-623c-4b7e-a37b-c6953a65fae6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:59aaa345-623c-4b7e-a37b-c6953a65fae6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-19 23:58:22.3683|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'CustomerWebApi.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424fd7f9-b314-4635-8617-1e6cb80e500e
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424fd7f9-b314-4635-8617-1e6cb80e500e
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-19 23:58:22.3683|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 1858.4274ms 
+2025-02-19 23:58:22.3683|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:8081/api/customers - 200 - application/json;+charset=utf-8 1856.3031ms 
+2025-02-19 23:59:59.1542|ERROR|CustomerWebApi.Controllers.CustomersController|Failed to Post Customer, exception : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:59aaa345-623c-4b7e-a37b-c6953a65fae6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CustomerWebApi.Repositories.Repository`1.AddAsync(T entity) in D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi\Repositories\Repository.cs:line 30
+   at CustomerWebApi.Controllers.CustomersController.PostCustomer(Customer customer) in D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi\Controllers\CustomersController.cs:line 61 
+2025-02-19 23:59:59.1542|ERROR|CustomerWebApi.Controllers.CustomersController|Failed to Post Customer, exception : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424fd7f9-b314-4635-8617-1e6cb80e500e
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CustomerWebApi.Repositories.Repository`1.AddAsync(T entity) in D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi\Repositories\Repository.cs:line 30
+   at CustomerWebApi.Controllers.CustomersController.PostCustomer(Customer customer) in D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi\Controllers\CustomersController.cs:line 61 
+2025-02-19 23:59:59.1542|ERROR|CustomerWebApi.Controllers.CustomersController|Failed to Post Customer, exception : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Customers' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0935fe33-fd4b-40c6-a8c6-9cff5a3767aa
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CustomerWebApi.Repositories.Repository`1.AddAsync(T entity) in D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi\Repositories\Repository.cs:line 30
+   at CustomerWebApi.Controllers.CustomersController.PostCustomer(Customer customer) in D:\DataNoesis\customer\CustomerWebApi\CustomerWebApi\Controllers\CustomersController.cs:line 61 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 130871.5811ms 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 98631.1829ms 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi) in 98631.8353ms 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CustomerWebApi.Controllers.CustomersController.PostCustomer (CustomerWebApi)' 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 500 - text/plain;+charset=utf-8 130901.9821ms 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 500 - text/plain;+charset=utf-8 98638.1994ms 
+2025-02-19 23:59:59.1542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:8081/api/customers - 500 - text/plain;+charset=utf-8 98640.6492ms 

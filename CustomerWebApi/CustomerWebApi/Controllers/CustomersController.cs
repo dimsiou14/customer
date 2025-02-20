@@ -8,10 +8,10 @@ namespace CustomerWebApi.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        private readonly IRepository<Customer> _customerRepository;
+        private readonly ICustomerRepository _customerRepository;
         private readonly ILogger<CustomersController> _logger;
 
-        public CustomersController(IRepository<Customer> customerRepository,
+        public CustomersController(ICustomerRepository customerRepository,
                                    ILogger<CustomersController> logger)
         {
             _customerRepository = customerRepository;
@@ -23,6 +23,7 @@ namespace CustomerWebApi.Controllers
         {
             try
             {
+              
                 return Ok(await _customerRepository.GetAllAsync());
             }
             catch (Exception ex)
@@ -58,6 +59,7 @@ namespace CustomerWebApi.Controllers
         {
             try
             {
+
                 await _customerRepository.AddAsync(customer);
 
                 var savedCustomer = await _customerRepository.GetByIdAsync(customer.CustomerId);
@@ -85,7 +87,7 @@ namespace CustomerWebApi.Controllers
                 }
 
                 await _customerRepository.UpdateAsync(customer);
-                return NoContent();
+                return Ok();
             }
             catch (Exception ex)
             {
