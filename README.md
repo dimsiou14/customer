@@ -1,4 +1,13 @@
-# customer
+# Customer Project - Data Noesis
+
+#Requirements
+- .NET Core SDK
+- Node.js and npm
+- SQL Server
+
+#Ports
+- Web API : 8081 (https), 5001 (http)
+- React App : 3000 (http)
 
 # Db Scripts (Sql Server)
  
